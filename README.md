@@ -4,7 +4,10 @@
 This project aims to extract and process IMDb movie data using AWS services. The raw data is stored in an S3 bucket and is transformed through an ETL pipeline built using AWS Glue. The pipeline includes data quality checks to filter out invalid records. Valid records are stored in Redshift for further analysis, while invalid records are kept in a separate S3 location for review. The process is monitored using Amazon SNS and EventBridge for email notifications upon ETL job execution.
 
 ## Architecture Diagram
-![ETL Pipeline Architecture](./path_to_diagram/architecture_diagram.png)
+![ETL Pipeline Architecture](Architecture_Diagram.jpeg)
+
+## AWS Glue Studio Visual ETL 
+![Glue_Visual_ETL](Aws_Glue_Visual_ETL.JPG)
 
 ## Tech Stack
 - **AWS S3**: Stores raw IMDb movie data (CSV format).
